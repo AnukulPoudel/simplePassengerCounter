@@ -5,15 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- linking external css file i could have just used internal css but this works too -->
     <link rel="stylesheet" href="style.css">
+
     <title>Simple Passenger Counter</title>
 </head>
 
 <body>
+    <!-- creating a div to enter a background color to that area only -->
     <div class="cover">
+
         <h2>People Entered:</h2>
-        <h1 id="count-el">5</h1>
-        <button id increment-btn>Increment</button>
+        <h1 id="count-el">0</h1>
+
+        <!-- onclick look for a function called increment() and invoke it -->
+        <button id="increment-btn" onclick="increment()">Increment</button>
+
+        <!-- onclick look for a function called reset() and invoke it -->
+        <button id="increment-btn" onclick="reset()">Reset</button>
+
+        <!-- loading (i guess) javaScript file -->
         <script src="script.js"></script>
     </div>
 </body>
