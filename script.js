@@ -17,13 +17,14 @@ function increment() {
 }
 
 // reset the number of passengers in the bus
-function reset(){
-    i=0;
-    document.getElementById("count-el").innerHTML = i; //updates the value of i in the page
-
+function decrement() {
+    if (i > 0) {  //checks if the value of i is less than 0 or not.Used to stop the value from going below 0 like -1, -1 etc..
+        i = i - 1;
+        document.getElementById("count-el").innerHTML = i; //updates the value of i in the page
+    }
 }
 
-//NOTE:: document.getElementById(""); 
+//NOTE:: document.getElementById("");
 //                      \
 //                       `~ is also a function (it is inside object called document so it is also knows as method)
 //                              A method is  a function inside an object.       
