@@ -1,3 +1,4 @@
+// Pseudo Code
 // initialize a variable to hold the passengers number
 // create a function
 // update the value in the website using document.getElementById("id-name").innerHTML
@@ -10,6 +11,8 @@ function increment() {
     {
         i = i + 1;  //incrementing the value of i by 1 times.
         document.getElementById("count-el").innerHTML = i; //updates the value of i in the page
+        //                         \
+        //                          `~ is called "pass in arguments" or parameters                        
     }
 }
 
@@ -19,3 +22,8 @@ function reset(){
     document.getElementById("count-el").innerHTML = i; //updates the value of i in the page
 
 }
+
+//NOTE:: document.getElementById(""); 
+//                      \
+//                       `~ is also a function (it is inside object called document so it is also knows as method)
+//                              A method is  a function inside an object.       
