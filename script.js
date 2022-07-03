@@ -24,6 +24,14 @@ function decrement() {
     }
 }
 
+//save the numbers of passengers last time
+let textToBeUpdated = document.getElementById("save");
+function save(){
+    let updatedText = `${i} - `; 
+    textToBeUpdated.innerHTML += updatedText;
+    console.log(i);
+}
+
 //NOTE:: document.getElementById("");
 //                      \
 //                       `~ is also a function (it is inside object called document so it is also knows as method)
